@@ -1,0 +1,165 @@
+{% extends "template/template.htm" %}
+{% load static %}
+
+{% cabecalho %}
+    <title>Registro de Disciplinas</title>
+{% endblock %}
+
+{% estilo %}
+    <link rel="stylesheet" href="{% static 'registro-disciplinas.css' %}">
+
+    <!-- links relacionados ao css. É utilizado o bootstrap, um arquivo próprio css e a fonte Roboto do google -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/registro-disciplinas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- ÍCONE FAVICON-->
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" />
+{% endblock %}
+
+{% conteudo %}
+    <div id="bg-registro-disciplinas">
+        <header>
+            <!-- Configurações do cabeçário. É colocado a logo e opções que redirecionam a outras páginas tambem. Além disso, há a configuração do botão para o cabeçário ser responsivo -->
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light headercolor">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/LOGOempresa.png" id="logo-registro-disciplinas" alt="Logo"> 
+                    StoreNotes	
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="index.html">Home <span class="sr-only"></span></a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="about.html">Sobre nós</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Conteúdo relacionado ao botão de adicionar alguma disciplina-->
+            <div class="card">
+                <div class="card-header">
+                    Registro de Disciplinas
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Adicionar Disciplinas</h5>
+                    <p class="card-text">Clique no botão abaixo para adicionar novas disciplinas ao seu registro.</p>
+                    <button class="btn btn-primary" type="submit" >Adicionar</button>
+                </div>
+            </div>
+
+            <!-- Conteúdo relacionado aos cards das disciplinas-->
+            <div class="container">
+                <div class="row">
+                    <!-- Primeiro Card-->
+                    <div class="col-md gy-2">
+                        <div class="card study-card">
+                            <img class="img-fluid rounded-start" src="../images/study-card1.jpeg" alt="Disciplina 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Disciplina 1</h5>
+                                <p class="card-text">Álgebra Linear</p>
+                                <a href="note-list.html" class="btn btn-primary">Álgebra Linear</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Segundo Card-->
+                    <div class="col-md gy-2">
+                        <div class="card study-card">
+                            <img class="img-fluid rounded-start" src="../images/study-card2.jpeg" alt="Disciplina 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Disciplina 2</h5>
+                                <p class="card-text">Cálculo II</p>
+                                <a href="note-list.html" class="btn btn-primary">Cálculo II</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Terceiro Card-->
+                    <div class="col-md gy-2">
+                        <div class="card study-card">
+                            <img class="img-fluid rounded-start" src="../images/study-card3.jpeg" alt="Disciplina 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Disciplina 3</h5>
+                                <p class="card-text">Introdução à Economia</p>
+                                <a href="note-list.html" class="btn btn-primary">Introdução à Economia</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quarto Card-->
+                    <div class="col-md gy-2">
+                        <div class="card study-card">
+                            <img class="img-fluid rounded-start" src="../images/study-card4.jpeg" alt="Disciplina 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Disciplina 4</h5>
+                                <p class="card-text">Banco de Dados</p>
+                                <a href="note-list.html" class="btn btn-primary">Banco de Dados</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quinto Card-->
+                    <div class="col-md gy-2">
+                        <div class="card study-card">
+                            <img class="img-fluid rounded-start" src="../images/study-card5.jpeg" alt="Disciplina 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Disciplina 5</h5>
+                                <p class="card-text">Linguagens de Programação</p>
+                                <a href="note-list.html" class="btn btn-primary">Linguagens de Programação</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sexto Card-->
+                    <div class="col-md gy-2" id="card-oculto">
+                        <div class="card study-card">
+                            <img class="img-fluid rounded-start" src="../images/study-card6.jpeg" alt="Disciplina 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Disciplina 6</h5>
+                                <p class="card-text">Análise Real</p>
+                                <a href="note-list.html" class="btn btn-primary">Análise Real</a>
+                            </div>
+                        </div>
+                    </div>			
+                </div>			
+            </div>
+        </main>
+
+        <!-- Configurações do rodapé. -->
+        <footer class="text-center text-white mt-5">
+            <div class="container-fluid p-3 footercolor1">
+                <p class=" align-items-center">
+                    <span class="me-3 text-light">
+                        Tem alguma dúvida ou sugestão?
+                    </span>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-outline-light">
+                        Entrar em contato
+                    </button>
+                </p>
+            </div>
+
+            <div class="text-center text-white p-3 footercolor2">
+                <a class="text-light" href="#">©️ 2021 StoreNotes</a>
+                <p>Version 0.0.1 All rights reserved</p>
+            </div>
+        </footer>
+
+        <!-- Códigos javascript do bootstrap, que é útil para itens (como os slides) funcionarem -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+{% endblock %}

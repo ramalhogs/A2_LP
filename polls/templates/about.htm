@@ -1,0 +1,141 @@
+{% extends "template/template.htm" %}
+{% load static %}
+
+{% cabecalho %}
+    <!-- Título da página-->
+    <title>Sobre Nós - StoreNotes</title>
+{% endblock %}
+
+{% estilo %}
+    <!-- links relacionados ao css. É utilizado o bootstrap, um arquivo próprio css e a fonte Roboto do google -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="{% static 'about.css' %}" rel="stylesheet">
+        
+    <!-- ICONE FAVICON-->
+    <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+{% endblock %}
+
+{% conteudo %}
+    <!-- Configurações do cabeçário. É colocado a logo e opções que redirecionam a outras páginas tambem. Além disso, há a configuração do botão para o cabeçário ser responsivo -->
+    <header>
+        <nav class="navbar  navbar-expand-lg navbar-light headercolor"> 
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/LOGOempresa.png" width="88" height="63" alt="Logo">
+                StoreNotes
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse aboutpage-navcollapse justify-content-end" id="navbarNav"> 
+                <ul class="navbar-nav"> 
+                    <li class="nav-item active">
+                        <a class="nav-link aboutpage-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item active ">
+                        <a class="nav-link aboutpage-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid pt-5">
+            <h1>Sobre o app</h1>
+            <h4>Descubra um pouco mais sobre o aplicativo e também sobre a equipe por trás do StoreNotes:</h4>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <!-- A seguir, vantagens de utilizar o StoreNotes.-->
+            <div class=" aboutpage-margem container-fluid">
+                <div class="row">
+                    <h3> Algumas vantagens de utilizar o StoreNotes.</h3>
+                    <!-- Card com a primeira Vantagem-->
+                    <div class="col-md gy-2">
+                        <div class="card aboutpage-infocard1">
+                            <img class="img-fluid rounded-start aboutimgcards" src="../images/card-advantage.jpeg" alt="Vantagem 1">
+                            <div class="card-body">
+                                <p>O StoreNotes é extremamente rico em recursos e acessibilidade. Suas anotações estarão a sua disposição sempre que você precisar!.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card com a segunda vantagem-->
+                    <div class="col-md gy-2"> 
+                        <div class="card aboutpage-infocard2"> 
+                            <img class="img-fluid rounded-start aboutimgcards" src="../images/card-advantage2.jpeg" alt="Vantagem 2">
+                            <div class="card-body">
+                                <p>O StoreNotes é capaz de centralizar todas as suas notas em um único lugar e fornecer todas as ferramentas necessárias para o seu dia a dia!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card com a terceira vantagem-->
+                    <div class="col-md gy-2">
+                        <div class="card aboutpage-infocard1"> 
+                            <img class="imd-fluid rounded-start aboutimgcards" src="../images/card-advantage3.jpeg" alt="Vantagem 3">
+                            <div class="card-body">
+                                <p>O StoreNotes é a nova moda do futuro. Se você não usar, vai ficar para trás. Não perca a chance!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article>
+                <div class="container-fluid aboutpage-margem">
+                    <h3>Quem somos nós?</h3>
+                    <ul>
+                        <li>Breno Marques Azevedo</li>
+                        <li>Cleomar Felipe Rabelo </li>
+                        <li>Gabriel Pastori</li>
+                        <li>Gustavo Ramalho</li>
+                    </ul>
+
+                    <h3 class="pt-3">De onde veio a ideia de criar o StoreNotes?</h3>
+                    <p>A ideia surgiu pois precisávamos criar algo para o trabalho de Linguagens de Progração. Pareceu sensato no momento fazer algo relacionado a estudos.</p>
+
+                     <h3 class="pt-3">Quais ferramentas foram utilizadas?</h3>
+                    <p>Para o desenvolvimento do site, diversas ferramentas foram utilizadas, desde IDEs como SublimeText e Visual Studio Code, até ferramentas como git, GitHub, GitHubDesktop e Figma.</p>
+                </div>
+            </article>
+            
+            <div class="container-fluid pt-3">
+                <div class="card aboutpage-infocard1">
+                    <div class="card-header">
+                        Se interessou? Vamos começar!
+                    </div>
+
+                    <div class="card-body center">
+                        <h5 class="card-title">Clique abaixo para iniciar sua história no StoreNotes.</h5>
+                        <a class="btn btn-outline-dark" href="login.html">Começar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-dark mt-5">
+        <!-- Aqui é a parte do rodapé, que tem um botão para entrar em contato com a empresa. O botão ainda não foi configurado -->
+        <div class="container-fluid p-3 footercolor1"> 
+            <p class="align-items-center">
+                <span class="me-3 text-light"> Tem alguma dúvida ou sugestão?</span>
+            </p> 
+            <button type="button" class="btn btn-outline-light">
+                Entrar em contato
+            </button>
+        </div>
+
+        <div class="text-center text-white p-3 footercolor2">
+            <a class="text-light" href="#">©️ 2021 StoreNotes</a>
+            <p> Version 0.0.1 All rights reserved </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+{% endblock %}
