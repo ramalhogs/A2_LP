@@ -1,0 +1,33 @@
+/* Parte do slide */
+
+#carouselExampleCaptions .carousel-caption {
+    top: 25%;
+}
+
+
+/* Cor das barras da parte debaixo do slide */
+.carousel-Controls .active {
+    background-color: $claro; 
+}
+
+/* Configurações do botão sem estar com mouse flutuando sobre */
+
+.inicialpage-mainbtn {
+    background-color: $azulclaro; 
+    color: $branco;
+    transition: .5s;
+    width: 200px;
+    height: 20px;
+    padding: 15px 25px;
+    border-radius:40px;
+    border: 4px solid transparent;
+    text-decoration: none;
+}
+
+ /* configurações com mouse flutuando sobre o botão */
+ .inicialpage-mainbtn:hover {
+    text-decoration: none; 
+    color: $escuro;
+    background-color: transparent;
+    border-color: $escuro;
+ }

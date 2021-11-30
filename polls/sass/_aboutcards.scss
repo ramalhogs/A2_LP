@@ -1,0 +1,20 @@
+.aboutimgcards {
+    height: auto; 
+    width: auto; 
+    max-height: 300px;
+}
+
+
+@mixin boxcor($boxcor: rgb(29, 53, 87)) {
+    background: rgb(241, 250, 238);
+    box-shadow: 1px 5px 20px rgba($boxcor, 1);
+    color: rgb(0,0,0);
+  }
+  
+  .aboutpage-infocard1 {
+    @include boxcor;
+  }
+  
+  .aboutpage-infocard2{
+    @include boxcor($boxcor: rgb(69, 123, 157));
+  }

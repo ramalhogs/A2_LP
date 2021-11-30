@@ -1,0 +1,19 @@
+$first-color: #F1FAEE;
+$second-color: #A8DADC;
+$third-color: #457B9D;
+$fourth-color: #1D3557;
+$first-font: "Roboto";
+
+@import './header';
+
+#login-body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient($first-color, $third-color);
+  font-family:$first-font;
+}
+#btn-login{
+  background-color: $fourth-color !important;
+}
+
+@import './footer';

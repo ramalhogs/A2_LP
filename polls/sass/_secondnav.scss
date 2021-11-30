@@ -1,0 +1,18 @@
+$color-bg-sec-nav: #f1faee;
+
+#second-nav {
+    background-color: $color-bg-sec-nav;
+}
+
+#back-to-subjects {
+    color: gray;
+    border-width:0 2px 0 0;
+    border-style: solid;
+    border-color: gray;
+    padding: 3px 10px 3px 10px;
+}
+
+#subject-name {
+    padding: 3px 10px 3px 10px;
+    font-weight: bold;
+}
