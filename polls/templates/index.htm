@@ -5,7 +5,7 @@
     <title>StoreNotes</title>
 {% endblock %}
 
-{% estilo %}
+{% block estilo %}
     <!-- links relacionados ao css. É utilizado o bootstrap, um arquivo próprio css e a fonte Roboto do google -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'paginainicial.css' %}">  
@@ -16,7 +16,7 @@
 {% endblock %}
 
 
-{% conteudo %}
+{% block conteudo %}
     <header>
       <!-- Configurações do cabeçário. É colocado a logo e opções que redirecionam a outras páginas tambem. Além disso, há a configuração do botão para o cabeçário ser responsivo --> 
     <div>

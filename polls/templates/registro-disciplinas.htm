@@ -1,11 +1,11 @@
-{% extends "templates/template.htm" %}
+{% extends "template.htm" %}
 {% load static %}
 
-{% cabecalho %}
+{% block cabecalho %}
     <title>Registro de Disciplinas</title>
 {% endblock %}
 
-{% estilo %}
+{% block estilo %}
     <link rel="stylesheet" href="{% static 'registro-disciplinas.css' %}">
 
     <!-- links relacionados ao css. É utilizado o bootstrap, um arquivo próprio css e a fonte Roboto do google -->
@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="../images/favicon-32x32.png" />
 {% endblock %}
 
-{% conteudo %}
+{% block conteudo %}
     <div id="bg-registro-disciplinas">
         <header>
             <!-- Configurações do cabeçário. É colocado a logo e opções que redirecionam a outras páginas tambem. Além disso, há a configuração do botão para o cabeçário ser responsivo -->

@@ -1,11 +1,11 @@
-{% extends "templates/template.htm" %}
+{% extends "template.htm" %}
 {% load static %}
 
-{% cabecalho %}
+{% block cabecalho %}
     <title>Login</title>
 {% endblock %}
 
-{% estilo %}
+{% block estilo %}
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'login.css' %}">
@@ -14,7 +14,7 @@
     <script src="../js/bootstrap.min.js"></script>
 {% endblock %}
 
-{% conteudo %}
+{% block conteudo %}
     <header>
         <div>
         <nav class="navbar  navbar-expand-lg navbar-light headercolor">

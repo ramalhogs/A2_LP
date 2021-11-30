@@ -1,11 +1,11 @@
-{% extends "templates/template.htm" %}
+{% extends "template.htm" %}
 {% load static %}
 
-{% cabecalho %}
+{% block cabecalho %}
     <title>StoreNotes</title>
 {% endblock %}
 
-{% estilo %}
+{% block estilo %}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'mainNoteList.css %}'">
 
@@ -16,7 +16,7 @@
     <script src="../js/bootstrap.min.js"></script>
 {% endblock %}
 
-{% conteudo %}
+{% block conteudo %}
     <div id="main-container">
         <div id="nav-bars">
             <!--HEADER-->
