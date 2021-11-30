@@ -1,0 +1,35 @@
+header .navbar-collapse {
+  width: auto;
+}
+
+header .nav-link:hover {
+  border-bottom: solid 4px White;
+}
+
+header .nav-link {
+  border-bottom: solid 4px transparent;
+}
+
+.headercolor {
+  background-color: #457b9d;
+}
+
+#login-body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F1FAEE), to(#457B9D));
+  background-image: linear-gradient(#F1FAEE, #457B9D);
+  font-family: "Roboto";
+}
+
+#btn-login {
+  background-color: #1D3557 !important;
+}
+
+.footercolor1 {
+  background-color: #457b9d;
+}
+
+.footercolor2 {
+  background-color: #1d3557;
+}

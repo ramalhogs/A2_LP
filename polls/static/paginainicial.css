@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* ------- PÁGINA INICIAL ------- */
+/* Alterando a fonte */
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+#inicialpage-imgfundo {
+  background-color: #457b9d;
+  background-image: url("../images/bgimage.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Cabeçalho */
+header .navbar-collapse {
+  width: auto;
+}
+
+header .nav-link:hover {
+  border-bottom: solid 4px White;
+}
+
+header .nav-link {
+  border-bottom: solid 4px transparent;
+}
+
+.headercolor {
+  background-color: #457b9d;
+}
+
+/* Configurações gerais dos slides */
+/* Parte do slide */
+#carouselExampleCaptions .carousel-caption {
+  top: 25%;
+}
+
+/* Cor das barras da parte debaixo do slide */
+.carousel-Controls .active {
+  background-color: #a8dadc;
+}
+
+/* Configurações do botão sem estar com mouse flutuando sobre */
+.inicialpage-mainbtn {
+  background-color: #457b9d;
+  color: #f1faee;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 200px;
+  height: 20px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  border: 4px solid transparent;
+  text-decoration: none;
+}
+
+/* configurações com mouse flutuando sobre o botão */
+.inicialpage-mainbtn:hover {
+  text-decoration: none;
+  color: #1d3557;
+  background-color: transparent;
+  border-color: #1d3557;
+}
+
+/* Sombras nos cards */
+.inicialpage-infocard1 {
+  background: #f1faee;
+  -webkit-box-shadow: 1px 5px 20px #1d3557;
+          box-shadow: 1px 5px 20px #1d3557;
+  color: black;
+}
+
+.inicialpage-infocard2 {
+  background: #f1faee;
+  -webkit-box-shadow: 1px 5px 20px #457b9d;
+          box-shadow: 1px 5px 20px #457b9d;
+  color: black;
+}
+
+/* background footer */
+.footercolor1 {
+  background-color: #457b9d;
+}
+
+.footercolor2 {
+  background-color: #1d3557;
+}
+
+/* Margem usada em itens */
+.inicialpage-margem {
+  margin-top: 150px;
+}
+
+/* Media Query utilizado para responsividade.*/
+/* Primeiro, informações dos slides para telas maiores */
+@media (min-width: 1030px) {
+  #carouselExampleCaptions .carousel-inner, #carouselExampleIndicators .carousel-item {
+    height: 80vh;
+  }
+  #carouselExampleCaptions .carousel-caption h2 {
+    margin-bottom: 25px;
+    font-size: 60px;
+  }
+  #carouselExampleCaptions .carousel-caption p {
+    font-weight: 300;
+    margin-bottom: 80px;
+    font-size: 25px;
+  }
+}
+
+/* Agora, informações dos slides para telas médias */
+@media (min-width: 701px) and (max-width: 1029px) {
+  #carouselExampleCaptions .carousel-caption h2 {
+    margin-bottom: 5px;
+    font-size: 50px;
+  }
+  #carouselExampleCaptions .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+/* Informações para telas menores (inclui tamanho da fonte do texto principal e dos cards */
+@media (max-width: 700px) {
+  .inicialpage-sizeh1 {
+    font-size: 28px;
+  }
+  .inicialpage-sizeh5 {
+    font-size: 18px;
+  }
+  .inicialpage-sizeh3 {
+    font-size: 16px;
+  }
+  .inicialpage-sizeh5 {
+    font-size: 20px;
+  }
+  .inicialpage-cardp {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,234 @@
+@import url("bootstrap.min.css");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#main-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: lightblue;
+  background-image: url("http://willerk.vteximg.com.br/arquivos/ids/188440/Papel-de-Parede-Disney-Fundo-do-mar-DI0957.jpg?v=637257672634830000");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#notes-container {
+  padding-bottom: 120px;
+}
+
+.note-title {
+  padding-left: 5px;
+  max-width: inherit;
+  padding-right: 80px;
+  overflow-wrap: break-word;
+}
+
+.note-change {
+  padding-left: 5px;
+  max-width: inherit;
+  padding-right: 130px;
+  overflow-wrap: break-word;
+}
+
+.note-creation {
+  padding-left: 5px;
+  max-width: inherit;
+  padding-right: 104px;
+  overflow-wrap: break-word;
+}
+
+.col-title {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-style: solid;
+  border-width: 4px 2px 4px 4px;
+}
+
+.col-change {
+  border-width: 4px 2px 4px 2px;
+  border-style: solid;
+}
+
+.col-creation {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: solid;
+  border-width: 4px 4px 4px 2px;
+}
+
+#create-note {
+  padding: 40px 0 0 0;
+  font-weight: bold;
+}
+
+#create-button {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #457b9d;
+  background-color: #a8dadc;
+  color: #457b9d;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+#create-button:hover {
+  color: #457b9d;
+  background-color: #84cbcd;
+}
+
+.hiperlink-nota {
+  color: black;
+  text-decoration: none;
+}
+
+.hiperlink-nota:hover {
+  color: black;
+}
+
+.hiperlink-nota:hover .col-3 {
+  background-color: #84cbcd;
+}
+
+.hiperlink-nota:hover .col-6 {
+  background-color: #84cbcd;
+}
+
+.container .row {
+  margin: 20px 0px 10px 0px;
+  background-color: transparent;
+}
+
+.container .col-3 {
+  background-color: #a8dadc;
+  border-color: #457b9d;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .col-3 .note-information {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.container .col-6 {
+  background-color: #a8dadc;
+  border-color: #457b9d;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .col-6 .note-information {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+header .navbar-collapse {
+  width: auto;
+}
+
+header .nav-link:hover {
+  border-bottom: solid 4px White;
+}
+
+header .nav-link {
+  border-bottom: solid 4px transparent;
+}
+
+.headercolor {
+  background-color: #457b9d;
+}
+
+#second-nav {
+  background-color: #f1faee;
+}
+
+#back-to-subjects {
+  color: gray;
+  border-width: 0 2px 0 0;
+  border-style: solid;
+  border-color: gray;
+  padding: 3px 10px 3px 10px;
+}
+
+#subject-name {
+  padding: 3px 10px 3px 10px;
+  font-weight: bold;
+}
+
+.footercolor1 {
+  background-color: #457b9d;
+}
+
+.footercolor2 {
+  background-color: #1d3557;
+}
+
+@media (max-width: 1000px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .col-title {
+    border-width: 4px 4px 2px 4px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  .col-change {
+    border-width: 2px 4px 2px 4px;
+  }
+  .col-creation {
+    border-width: 2px 4px 4px 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+@media (max-width: 260px) {
+  .col-3, .col-6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .note-title, .note-change, .note-creation {
+    padding: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 0.9em;
+  }
+}

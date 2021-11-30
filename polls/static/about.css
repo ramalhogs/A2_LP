@@ -1,0 +1,60 @@
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+#aboutpage-fundo {
+  background-color: #457b9d;
+  background-image: url("../images/bgimage.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .navbar-collapse {
+  width: auto;
+}
+
+header .nav-link:hover {
+  border-bottom: solid 4px White;
+}
+
+header .nav-link {
+  border-bottom: solid 4px transparent;
+}
+
+.headercolor {
+  background-color: #457b9d;
+}
+
+.aboutpage-margem {
+  margin-top: 70px;
+}
+
+.aboutimgcards {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+}
+
+.aboutpage-infocard1 {
+  background: #f1faee;
+  -webkit-box-shadow: 1px 5px 20px #1d3557;
+          box-shadow: 1px 5px 20px #1d3557;
+  color: black;
+}
+
+.aboutpage-infocard2 {
+  background: #f1faee;
+  -webkit-box-shadow: 1px 5px 20px #457b9d;
+          box-shadow: 1px 5px 20px #457b9d;
+  color: black;
+}
+
+.footercolor1 {
+  background-color: #457b9d;
+}
+
+.footercolor2 {
+  background-color: #1d3557;
+}

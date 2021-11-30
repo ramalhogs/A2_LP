@@ -1,0 +1,51 @@
+@charset "UTF-8";
+#bg-registro-disciplinas {
+  background-color: #457b9d;
+  background-image: url("../images/bgimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Configurações do Cabeçalho*/
+#logo-registro-disciplinas {
+  height: 63px;
+  width: 89px;
+}
+
+header .navbar-collapse {
+  width: auto;
+}
+
+header .nav-link:hover {
+  border-bottom: solid 4px White;
+}
+
+header .nav-link {
+  border-bottom: solid 4px transparent;
+}
+
+.headercolor {
+  background-color: #457b9d;
+}
+
+/*Configurações dos Cards*/
+div .row {
+  padding-top: 1rem;
+}
+
+div .study-card {
+  width: 18rem;
+  -webkit-box-shadow: 1px 5px 20px #1d3557;
+          box-shadow: 1px 5px 20px #1d3557;
+}
+
+/*Configurações de Rodapé*/
+.footercolor1 {
+  background-color: #457b9d;
+}
+
+.footercolor2 {
+  background-color: #1d3557;
+}
+/*# sourceMappingURL=registro-disciplinas.css.map */
