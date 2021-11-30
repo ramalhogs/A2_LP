@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">   
 
     <!-- ICONE FAVICON-->
-    <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+    <link rel="icon" type="imagem/png" href="{% static 'images/favicon-32x32.png' %}" />
 {% endblock %}
 
 
@@ -22,7 +22,7 @@
     <div>
     <nav class="navbar  navbar-expand-lg navbar-light headercolor">
       <a class="navbar-brand" href="index.html">
-      <img src="../images/LOGOempresa.png" width="88" height="63" alt="Logo">
+      <img src="{% static 'images/LOGOempresa.png' %}" width="88" height="63" alt="Logo">
       StoreNotes
       </a>
 
@@ -65,7 +65,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../images/slide1.png" class="d-block w-100" alt="Imagem 1">
+        <img src="{% static 'images/slide1.png' %}" class="d-block w-100" alt="Imagem 1">
         <div class="carousel-caption d-none d-md-block">
           <h2>Ambiente de anotações? on-line?</h2>
           <p>É isso mesmo!! E tudo salvo na nuvem sem riscos de perder nada! </p>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../images/slide2.jpg" class="d-block w-100" alt="Imagem 2">
+        <img src="{% static 'images/slide2.jpg' %}'" class="d-block w-100" alt="Imagem 2">
         <div class="carousel-caption d-none d-md-block">
           <h2>Quer largar de vez os cadernos?</h2>
           <p>O StoreNotes te ajuda! Diga adeus as folhas e bagunças primitivas! </p>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../images/slide3.jpg" class="d-block w-100" alt="Imagem 3">
+        <img src="{% static 'images/slide3.jpg' %}" class="d-block w-100" alt="Imagem 3">
         <div class="carousel-caption d-none d-md-block">
           <h2>Escolha as matérias que cursa e se organize!</h2>
           <p>Aqui você separa tudo por matéria e sabe onde está cada arquivo!</p>
@@ -105,7 +105,7 @@
     <div class="row">
       <div class="col-md-6 pt-5 ">   
         <div class="card inicialpage-infocard1">
-          <img class="card-img-top " src="../images/inicialpagecard1.jpg" alt="Imagem de capa do card">
+          <img class="card-img-top " src="{% static 'images/inicialpagecard1.jpg' %}" alt="Imagem de capa do card">
           <div class="card-body">
             <p class="card-text inicialpage-sizeh1"><h1> A mais nova maneira de estudar como você nunca viu antes</h1>
                                 <h4 class="inicialpage-sizeh5"> O StoreNotes é o app que vai mudar o jeito como você vê as aulas. Crie uma conta e comece já! :) </h4>
@@ -117,13 +117,13 @@
         <div class="card inicialpage-infocard2">
           <div class="card-body">
             <h5 class="card-title inicialpage-sizeh5">Matemática nas suas anotações</h5>
-            <img class="rounded-circle" src="../images/inicialpagecard2.jpg" width="75" height="75" alt="Logo">
+            <img class="rounded-circle" src="{% static 'images/inicialpagecard2.jpg' %}" width="75" height="75" alt="Logo">
             <p class="card-text inicialpage-cardp">O StoreNotes te possibilita anotar o conteúdo da aula e ainda te concede ferramentas matemáticas!</p>
             <h5 class="card-title pt-2 inicialpage-sizeh5">Acesso aos seus trabalhos e links</h5>
-            <img  class="rounded-circle" src="../images/inicialpagecard3.jpg" width="75" height="75" alt="Logo">
+            <img  class="rounded-circle" src="{% static 'images/inicialpagecard3.jpg' %}" width="75" height="75" alt="Logo">
             <p class="card-text inicialpage-cardp">Os links das suas aulas estarão à fácil acesso, assim como os conteúdos já salvados por você!</p>
             <h5 class="card-title pt-2 inicialpage-sizeh5">Organização do conteúdo</h5>
-            <img class="rounded-circle" src="../images/inicialpagecard4.jpg" width="75" height="75" alt="Logo">
+            <img class="rounded-circle" src="{% static 'images/inicialpagecard4.jpg' %}" width="75" height="75" alt="Logo">
             <p class="card-text inicialpage-cardp">Com nossa ajuda, você finalmente será um estudante organizado! </p>
           </div>
         </div>
@@ -179,7 +179,7 @@
       <div>
         <nav class="navbar  navbar-expand-lg navbar-light headercolor">
           <a class="navbar-brand" href="index.html">
-           <img src="../images/LOGOempresa.png" width="88" height="63" alt="Logo">
+           <img src="{% static 'images/LOGOempresa.png' %}" width="88" height="63" alt="Logo">
           StoreNotes
           </a>
 
@@ -222,7 +222,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../images/slide1.png" class="d-block w-100" alt="Imagem 1">
+            <img src="{% static 'images/slide1.png' %}" class="d-block w-100" alt="Imagem 1">
             <div class="carousel-caption d-none d-md-block">
               <h2>Ambiente de anotações? on-line?</h2>
               <p>É isso mesmo!! E tudo salvo na nuvem sem riscos de perder nada! </p>
@@ -230,7 +230,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../images/slide2.jpg" class="d-block w-100" alt="Imagem 2">
+            <img src="{% static 'images/slide2.jpg' %}" class="d-block w-100" alt="Imagem 2">
             <div class="carousel-caption d-none d-md-block">
               <h2>Quer largar de vez os cadernos?</h2>
               <p>O StoreNotes te ajuda! Diga adeus as folhas e bagunças primitivas! </p>
@@ -262,7 +262,7 @@
         <div class="row">
           <div class="col-md-6 pt-5 ">   
             <div class="card inicialpage-infocard1">
-              <img class="card-img-top " src="../images/inicialpagecard1.jpg" alt="Imagem de capa do card">
+              <img class="card-img-top " src="{% static 'images/inicialpagecard1.jpg' %}" alt="Imagem de capa do card">
               <div class="card-body">
                 <p class="card-text inicialpage-sizeh1"><h1> A mais nova maneira de estudar como você nunca viu antes</h1>
                                      <h4 class="inicialpage-sizeh5"> O StoreNotes é o app que vai mudar o jeito como você vê as aulas. Crie uma conta e comece já! :) </h4>
@@ -274,13 +274,13 @@
             <div class="card inicialpage-infocard2">
               <div class="card-body">
                 <h5 class="card-title inicialpage-sizeh5">Matemática nas suas anotações</h5>
-                <img class="rounded-circle" src="../images/inicialpagecard2.jpg" width="75" height="75" alt="Logo">
+                <img class="rounded-circle" src="{% static 'images/inicialpagecard2.jpg' %}" width="75" height="75" alt="Logo">
                 <p class="card-text inicialpage-cardp">O StoreNotes te possibilita anotar o conteúdo da aula e ainda te concede ferramentas matemáticas!</p>
                 <h5 class="card-title pt-2 inicialpage-sizeh5">Acesso aos seus trabalhos e links</h5>
-                <img  class="rounded-circle" src="../images/inicialpagecard3.jpg" width="75" height="75" alt="Logo">
+                <img  class="rounded-circle" src="{% static 'images/inicialpagecard3.jpg' %}" width="75" height="75" alt="Logo">
                 <p class="card-text inicialpage-cardp">Os links das suas aulas estarão à fácil acesso, assim como os conteúdos já salvados por você!</p>
                 <h5 class="card-title pt-2 inicialpage-sizeh5">Organização do conteúdo</h5>
-                <img class="rounded-circle" src="../images/inicialpagecard4.jpg" width="75" height="75" alt="Logo">
+                <img class="rounded-circle" src="{% static 'images/inicialpagecard4.jpg' %}" width="75" height="75" alt="Logo">
                 <p class="card-text inicialpage-cardp">Com nossa ajuda, você finalmente será um estudante organizado! </p>
               </div>
             </div>

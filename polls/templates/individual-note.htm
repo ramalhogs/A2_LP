@@ -7,13 +7,13 @@
 
 {% block estilo %}
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'IndividualNote.css' %}">
+    <link rel="stylesheet" href="{% static 'mainIndividualNote.css' %}">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicon-32x32.png">
 
     <!-- Bootstrap JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 {% endblock %}
 
 {% block conteudo %}
@@ -24,7 +24,7 @@
                 <div>
                 <nav class="navbar  navbar-expand-lg navbar-light headercolor">
                     <a class="navbar-brand" href="index.html">
-                    <img src="../images/LOGOempresa.png" width="88" height="63" alt="Logo">
+                    <img src="{% static 'images/LOGOempresa.png' %}" width="88" height="63" alt="Logo">
                     StoreNotes
                     </a>
             

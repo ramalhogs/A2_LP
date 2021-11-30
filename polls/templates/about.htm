@@ -13,7 +13,7 @@
     <link href="{% static 'about.css' %}" rel="stylesheet">
         
     <!-- ICONE FAVICON-->
-    <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+    <link rel="icon" type="imagem/png" href="{% static 'images/favicon-32x32.png' %}" />
 {% endblock %}
 
 {% block conteudo %}
@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light headercolor"> 
             <a class="navbar-brand" href="index.html">
-                <img src="../images/LOGOempresa.png" width="88" height="63" alt="Logo">
+                <img src="{% static 'images/LOGOempresa.png' %}" width="88" height="63" alt="Logo">
                 StoreNotes
             </a>
 
@@ -58,7 +58,7 @@
                     <!-- Card com a primeira Vantagem-->
                     <div class="col-md gy-2">
                         <div class="card aboutpage-infocard1">
-                            <img class="img-fluid rounded-start aboutimgcards" src="../images/card-advantage.jpeg" alt="Vantagem 1">
+                            <img class="img-fluid rounded-start aboutimgcards" src="{% static 'images/card-advantage.jpeg' %}" alt="Vantagem 1">
                             <div class="card-body">
                                 <p>O StoreNotes é extremamente rico em recursos e acessibilidade. Suas anotações estarão a sua disposição sempre que você precisar!.</p>
                             </div>
@@ -68,7 +68,7 @@
                     <!-- Card com a segunda vantagem-->
                     <div class="col-md gy-2"> 
                         <div class="card aboutpage-infocard2"> 
-                            <img class="img-fluid rounded-start aboutimgcards" src="../images/card-advantage2.jpeg" alt="Vantagem 2">
+                            <img class="img-fluid rounded-start aboutimgcards" src="{% static 'images/card-advantage2.jpeg' %}" alt="Vantagem 2">
                             <div class="card-body">
                                 <p>O StoreNotes é capaz de centralizar todas as suas notas em um único lugar e fornecer todas as ferramentas necessárias para o seu dia a dia!</p>
                             </div>
@@ -78,7 +78,7 @@
                     <!-- Card com a terceira vantagem-->
                     <div class="col-md gy-2">
                         <div class="card aboutpage-infocard1"> 
-                            <img class="imd-fluid rounded-start aboutimgcards" src="../images/card-advantage3.jpeg" alt="Vantagem 3">
+                            <img class="imd-fluid rounded-start aboutimgcards" src="{% static 'images/card-advantage3.jpeg' %}" alt="Vantagem 3">
                             <div class="card-body">
                                 <p>O StoreNotes é a nova moda do futuro. Se você não usar, vai ficar para trás. Não perca a chance!</p>
                             </div>

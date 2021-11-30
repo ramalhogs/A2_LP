@@ -1,4 +1,4 @@
-@import url("bootstrap.min.css");
+@import url("{% static 'bootstrap.min.css'%}");
 body {
   font-family: 'Roboto', sans-serif;
 }

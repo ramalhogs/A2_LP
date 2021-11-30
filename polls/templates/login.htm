@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'login.css' %}">
     <link rel="shortcut icon" href="../images/icon.png" />
 
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 {% endblock %}
 
 {% block conteudo %}
@@ -19,7 +19,7 @@
         <div>
         <nav class="navbar  navbar-expand-lg navbar-light headercolor">
             <a class="navbar-brand" href="index.html">
-            <img src="../images/LOGOempresa.png" width="88" height="63" alt="Logo">
+            <img src="{% static 'images/LOGOempresa.png' %}" width="88" height="63" alt="Logo">
             StoreNotes
             </a>
 
@@ -46,7 +46,7 @@
                 <div class="card shadow border-top-0 rounded-4 my-5">
                 <div class="card-body p-4 p-sm-8">
                     <div class="card-title text-center fw-light mb-4 fs-5">
-                        <img src="../images/icon.png" alt="storenotes icon">
+                        <img src="{% static 'images/icon.png' %}" alt="storenotes icon">
                     </div>
                     <form action="registro-disciplinas.html">
                     <div class="form-floating mb-3">
