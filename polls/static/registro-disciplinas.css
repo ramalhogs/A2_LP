@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #bg-registro-disciplinas {
   background-color: #457b9d;
-  background-image: url("../images/bgimage.jpeg");
+  background-image: url("{% static 'images/bgimage.jpeg' %}");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
