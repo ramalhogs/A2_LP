@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponse
+from django.conf.urls import url
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.urls import reverse
 
 # Mudei o nome de algumas funções, pois estavam dando erro. 
 # Os arquivos que contém hífen (-) no nome dão erro. 
