@@ -1,6 +1,6 @@
 {% extends "template.htm" %}
 {% load static %}
-{% load poll_extras.py %}
+{% load poll_extras %}
 
 {% block cabecalho %}
     <title>StoreNotes</title>
@@ -104,8 +104,7 @@
                         Nota:
                         </div>
                         <div class="note-title">
-                            {% lorem 13 w random%}
-                            {{ nome|teste }}
+                            {{ nome|capfirst }}{% lorem 13 w random%}{{ value|teste }}
                         </div>
                     </div>
                     <div class="col-3 col-change">

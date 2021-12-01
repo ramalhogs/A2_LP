@@ -4,5 +4,6 @@ register = template.Library()
 
 @register.filter(name="teste")
 
-def filter_teste(value):
-    return "{} + .".format(value)
+def ponto_final(value):
+    return "{}.".format(value)
+
