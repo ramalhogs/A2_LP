@@ -5,6 +5,8 @@
     <title>StoreNotes</title>
 {% endblock %}
 
+
+
 {% block estilo %}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/mainNoteList.css' %}">
@@ -49,7 +51,7 @@
             <nav id="second-nav" class="navbar navbar-expand-sm">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a id="back-to-subjects" class="nav-link" href="../registro-disciplinas">Voltar</a>
+                    <a id="back-to-subjects" class="nav-link" href="../registro-disciplina">Voltar</a>
                 </li>
                 <li class="nav-item">
                     <div id="subject-name" class="navbar-text">Disciplina</div>
@@ -73,11 +75,7 @@
                         Título:
                         </div>
                         <div class="note-title">
-                            {{ ''|capfirst }}
-
-                            {% filter capfirst%}
-                                {% lorem 1 w random %}
-                            {% endfilter %}
+                            {% lorem 1 w random %}
                         </div>
                     </div>
                     <div class="col-3 col-change">
@@ -102,7 +100,7 @@
                 <div class="row">
                     <div class="col-6 col-title">
                         <div class="note-information">
-                        Título:
+                        Nota:
                         </div>
                         <div class="note-title">
                             {% lorem 13 w random%}
@@ -129,21 +127,4 @@
         </div>
         <!--/NOTE-->
     </div>
-    <!--FOOTER-->
-    <footer class="text-center bg-dark mt-0">    
-        <div class="container-fluid p-3 footercolor1">
-            <p class=" align-items-center">
-            <span class="me-3 text-light">Tem alguma dúvida ou sugestão?</span></p>
-            <p><button type="button" class="btn btn-outline-light">
-                Entrar em contato
-            </button>
-            </p>
-        </div>
-
-        <div class="text-center text-white p-3 footercolor2">
-            <a class="text-light" href="#">©️ 2021 StoreNotes</a>
-            <p> Version 0.0.1 All rights reserved </p>
-            </div>
-    </footer>
-    <!--/FOOTER-->
 {% endblock %}
