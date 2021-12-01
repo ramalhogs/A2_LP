@@ -73,7 +73,11 @@
                         Título:
                         </div>
                         <div class="note-title">
-                            {% lorem 1 w random %}
+                            {{ ''|capfirst }}
+
+                            {% filter capfirst%}
+                                {% lorem 1 w random %}
+                            {% endfilter %}
                         </div>
                     </div>
                     <div class="col-3 col-change">
@@ -81,7 +85,7 @@
                         Modificação:
                         </div>
                         <div class="note-change">
-                            {% now "jS F Y H:i" %}
+                            {% now "jS N Y H:i" %}
                         </div>
                     </div>
                     <div class="col-3 col-creation">
@@ -109,7 +113,7 @@
                         Modificação:
                         </div>
                         <div class="note-change">
-                            {% now "jS F Y H:i" %}
+                            {% now "jS N Y H:i" %}
                         </div>
                     </div>
                     <div class="col-3 col-creation">
