@@ -44,7 +44,7 @@ header .nav-link {
   position: relative;
   min-height: 100vh;
   background-color: lightblue;
-  background-image: "{% static 'images/bgimage.jpeg' %}";
+  background-image: '/static/images/bgimage.jpeg';
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

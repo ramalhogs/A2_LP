@@ -10,13 +10,16 @@
     <!-- links relacionados ao css. É utilizado o bootstrap, um arquivo próprio css e a fonte Roboto do google -->   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-    <link href="{% static 'about.css' %}" rel="stylesheet">
+    <link href="{% static 'css/about.css' %}" rel="stylesheet">
         
     <!-- ICONE FAVICON-->
     <link rel="icon" type="imagem/png" href="{% static 'images/favicon-32x32.png' %}" />
 {% endblock %}
 
 {% block conteudo %}
+    <div id="aboutpage-fundo">
+
+    </div>
     <!-- Configurações do cabeçário. É colocado a logo e opções que redirecionam a outras páginas tambem. Além disso, há a configuração do botão para o cabeçário ser responsivo -->
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light headercolor"> 
